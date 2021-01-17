@@ -1,0 +1,79 @@
+body {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    &__info, ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        
+    }
+    &__info-logo {
+        padding-right: 3rem;
+        width: 4rem;
+        
+    }
+    &__info ul li {
+        padding-right: 1rem;
+    }
+}
+
+.hero-section {
+    
+    &__bg {
+        position: relative;
+        width: 100%;
+    }
+}
+
+.feature {
+    padding-bottom: 5rem;
+    h2 {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    &__stats{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        
+    }
+    
+}
+
+.prices {
+    background-image: url(../img/images/bg-price.svg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    
+    
+    &__title {
+        text-align: center;
+         
+    }
+   
+}
+.foot {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    ul {
+        display: flex;
+        list-style: none;
+        
+        li {
+            padding-right: 2rem;
+            
+        }
+    }
+}
+
+

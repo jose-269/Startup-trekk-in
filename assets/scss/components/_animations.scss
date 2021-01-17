@@ -1,0 +1,24 @@
+.a-bar {
+    transform: translateY(100px);
+    animation: a-sube-baja 7s ease-in-out infinite;
+}
+
+.b-bar {
+    transform: translateY(0px); 
+    animation: a-sube-baja 7s ease infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes a-sube-baja {
+    0% {
+        transform: translateY(0); 
+    }
+
+    50% {
+        transform: translateY(85px); 
+    }
+
+    100% {
+        transform: translateY(0px);  
+    }
+}

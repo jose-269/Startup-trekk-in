@@ -1,0 +1,21 @@
+.foot {
+    background-color: $raising-black;
+    & > *, a {
+        font-family: $raleway;
+        font-weight: $bold;
+        font-size: $medium;
+        color: $white;
+    }
+}
+
+/**Medias Query**/
+@media only screen and (max-width:768px){
+    .foot {
+        & > *, a {
+            font-family: $raleway;
+            font-weight: $bold;
+            font-size: $small;
+            color: $white;
+        }
+    }
+}

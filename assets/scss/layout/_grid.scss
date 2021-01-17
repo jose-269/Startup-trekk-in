@@ -1,0 +1,51 @@
+.prices__title {
+    
+    font-weight: $bold;
+    font-size: $xxxx-large;
+    color: $white;
+    padding: 175px 0 40px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(11, 50px);
+       
+    &__free {
+        grid-column: 4 / 8;
+        grid-row: 1 / 10;
+        
+    }
+    &__premium {
+        grid-column: 10 / 14;
+        grid-row: 1 / 10
+    }
+}
+
+/**Medias Query**/
+
+@media only screen and (max-width: 576px) {
+    .cards {
+        height: fit-content;
+        &__free {
+            grid-column: 2 / 15;
+            grid-row: 1 / 5;
+        }
+        &__premium {
+            grid-column: 2 / 15;
+            grid-row: 5 / 9;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cards {
+        &__free {
+            grid-column: 2 / 8;
+            
+        }
+        &__premium {
+            grid-column: 10 / 16;
+            
+        }
+    }
+}

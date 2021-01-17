@@ -1,0 +1,51 @@
+.navigation__log {
+    &__btn-log-in {
+        background-color: $white;
+        border: none;
+        transition: all .4s ease;
+    }
+    &__btn-sign-up {
+        background-color: $ball-blue;
+        color: $white;
+        border: none;
+        transition: all .4s ease;
+    }
+}
+
+.cards__btn {
+    button {
+        background-color: $ball-blue;
+        color: $white;
+        border: none;
+        transition: all .4s ease;
+    }
+    
+}
+/**Hover, Focus & Transitions**/
+.navigation__log {
+    button:hover {
+        background-color: $middle-blue;
+        color: $white;
+        
+    }
+    button:focus {
+        background-color: $spanish-gray;
+        color: $white;
+        border: none;
+        
+    }
+}
+
+.cards__btn {
+    button:hover {
+        background-color: $middle-blue;
+        color: $white;
+        
+    }
+    button:focus {
+        background-color: $spanish-gray;
+        color: $white;
+        border: none;
+        
+    }
+}

@@ -1,0 +1,54 @@
+.hero-section {
+    &__txt {
+        position: absolute;
+        top: 13rem;
+        margin: 0 5rem;
+        width: 22rem;
+        h1 {
+            font-size: $xxxx-large;
+            padding-bottom: 1.5rem;
+        }
+        p {
+            font-family: $raleway;
+            line-height: 1.8rem;
+            font-size: $small;
+            font-weight: $regular;
+            text-align: justify;
+        }
+    }
+}
+/**Medias Query**/
+//Small devices
+@media only screen and (max-width:576px){
+    .hero-section {
+        display: flex;
+        justify-content: center;
+
+        &__bg {
+            top: 16rem;
+        }
+        
+        
+    }
+}
+//Medium devices
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        &__txt {
+            top: 1rem;
+            margin: 0 3rem;
+           
+        }
+        &__bg {
+            margin-top: 50px;
+        }
+    }
+}
+//Large devices
+@media only screen and (max-width: 992px) {
+    .hero-section {
+        &__txt {
+            top: 8rem;
+        }
+    }
+}

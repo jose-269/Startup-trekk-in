@@ -1,0 +1,52 @@
+.navigation {
+    padding: 1.5rem 5rem;
+    &__info {
+        font-family: $raleway;
+        font-weight: $regular;
+        font-size: $small;
+        ul li a {
+            color: $raising-black;
+        }
+    }
+    &__log {
+        button {
+            padding: .5rem 1rem;
+            font-family: $raleway;
+            font-weight: $bold;
+        }
+        &__btn-sign-up {
+            margin-left: 1.5rem;
+        }
+    }
+}
+
+/**Medias Query**/
+//Small devices 
+@media only screen and (max-width: 576px) {
+    .navigation {
+        
+        padding: 1rem 1rem;
+        &__info ul {
+            display: none;
+        }
+        &__log {
+            display: none;
+        }
+        
+    }
+}
+//Medium devices
+@media only screen and (max-width:768px ){
+    .navigation {
+        padding: 1rem 3rem;
+    }
+}
+//xxx-large devices
+@media only screen and (max-width: 1980px) and (min-width: 577px) {
+    .navigation {
+        
+       i {
+         display: none;
+       }
+    }
+}

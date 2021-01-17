@@ -1,0 +1,75 @@
+.cards {
+    
+    & >*{
+        background-color: $white;
+        padding: 25px 1.5rem 25px;
+        
+        h3 {
+           font-weight: $regular;
+           font-size: $x-large; 
+           padding-bottom: .5rem;
+        }
+        h4 {
+            font-weight: $bold; 
+            font-size: $xxx-large; 
+            font-family: $raleway;
+            word-spacing: 10px;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+.cards {
+     ul  {
+        font-family: $open-sans;
+        font-weight: $regular;
+        font-size: $medium;
+        padding-left: 25px;
+        padding-top: 12px;
+        line-height: 35px;
+    }
+    &__free ul  {
+        padding-bottom: 130px;
+    }
+    &__premium ul {
+        padding-bottom: 25px;
+    }
+} 
+
+.cards__btn {
+    text-align: center;
+    padding-top: 1rem;
+    button {
+        font-family: $raleway;
+        font-size: $small;
+        font-weight: $bold;
+        
+    }
+    &-free {
+        padding: 1rem 6.5rem;
+    }
+    &-premium {
+        padding: .8rem  5.5rem;
+    }
+}
+
+/**Cards Hover**/
+.cards > div {
+    transition: all .8s ease-in-out;
+}
+
+.cards > div:hover {
+    box-shadow: 20px 20px 10px $raising-black;
+    
+}
+
+/**Medias query**/
+//Large devices
+@media only screen and (max-width:hover 1200px) {
+    .cards {
+        
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
